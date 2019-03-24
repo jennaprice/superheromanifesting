@@ -1,0 +1,17 @@
+extends ../layouts/default
+
+block content
+  .container-fluid
+    .row
+      h1 Coaching with Cheyenne
+      .col
+        each package in locals.packages
+          .postcard
+            h3 #{package.title}
+            h5 #{package.tagline}
+            p
+              | #{package.description}
+            .text-center
+              h5 #{package.price}
+            
+  

@@ -17,4 +17,7 @@ Package.add({
   tagline: { type: String },
   details: { type: Types.Html, wysiwyg: true, height: 300 },
   testimonials: { type: Types.Relationship, ref: 'Testimonial', many: true }
-})
+});
+
+Package.defaultColumns = ' title | details | price ';
+Package.register();
