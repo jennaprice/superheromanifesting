@@ -10,8 +10,8 @@ let keystone = require('keystone');
 // and documentation.
 
 keystone.init({
-	'name': 'superhero-manifesting',
-	'brand': 'superhero-manifesting',
+	'name': 'Superhero Manifesting',
+	'brand': 'Superhero Manifesting',
 
 	'sass': 'public',
 	'static': 'public',
@@ -20,6 +20,7 @@ keystone.init({
 	'view engine': 'pug',
 
 	'emails': 'templates/emails',
+	'signin logo': ['/images/logo.png'],
 
 	'auto update': true,
 	'session': true,
