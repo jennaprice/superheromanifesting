@@ -9,6 +9,7 @@ let Types = keystone.Field.Types;
 let Package = new keystone.List('Package', {
   map: { name: 'title' },
   autokey: { path: 'slug', from: 'title', unique: true },
+  sortable: true
 });
 
 Package.add({

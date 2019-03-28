@@ -7026,13 +7026,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Permanent Marker', cursive; }
 
+.bg-black {
+  background-color: black; }
+
 #header {
   background-color: black;
   color: white;
   height: 25vh; }
 
-header a {
+#header a {
   color: yellow; }
 
 .navbar-brand img {
-  max-height: 200px; }
+  max-height: 200px;
+  object-fit: contain; }
+
+.postcard {
+  border: 1px solid gray;
+  margin: 1rem auto;
+  padding: 2rem; }

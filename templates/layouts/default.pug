@@ -39,26 +39,28 @@ html
 		//- HEADER
 		#header
 			.container-fluid
-				nav.navbar.navbar-expand-lg
-					a.navbar-brand(href="/")
-						div
-							img(src="/images/supercheyenne.jpg", alt="super hero cheyenne")
-							h4 Super Hero Manifesting
+				.div.row.bg-black
+					nav.navbar.navbar-expand-lg
+						a.navbar-brand(href="/")
+							div.d-flex.flex-column
+								figure.text-center
+									img(src="/images/supercheyenne.jpg", alt="super hero cheyenne")
+									figcaption Super Hero Manifesting
 						button.navbar-toggler(pe="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-							span.navbar-toggler-icon
+								span.navbar-toggler-icon
 						.collapse.navbar-collapse#navbarSupportedContent
-							ul.navbar-nav
-								li.nav-item.active
+							ul.navbar-nav.w-100.d-flex.justify-content-end
+								li.nav-item
 									a.nav-link(href="/") Home
 										span.sr-only(current)
-								li.nav-item.active
+								li.nav-item
 									a.nav-link(href="/blog") Blog
-								li.nav-item.active
+								li.nav-item
 									a.nav-link(href="/coaching") Coaching
 
 
 		//- BODY
-		#body
+		#body(style="margin-top:12rem;")
 
 			//- NOTE:
 			//- There is no .container wrapping class around body blocks to allow more flexibility in design.
