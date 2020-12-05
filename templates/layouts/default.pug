@@ -14,6 +14,7 @@ html
 
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
 		link(href="https://fonts.googleapis.com/css?family=Arvo|Permanent+Marker", rel="stylesheet")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
 		link(href="/styles/site.css", rel="stylesheet")
 
 		//- This file provides the default styling for the KeystoneJS Content Editor
@@ -39,24 +40,28 @@ html
 		//- HEADER
 		#header
 			.container-fluid
-				.div.row.bg-black
-					nav.navbar.navbar-expand-lg
-						a.navbar-brand(href="/")
-							div.d-flex.flex-column
-								figure.text-center
-									img(src="/images/supercheyenne.jpg", alt="super hero cheyenne")
-									figcaption Super Hero Manifesting
-						button.navbar-toggler(pe="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-								span.navbar-toggler-icon
-						.collapse.navbar-collapse#navbarSupportedContent
-							ul.navbar-nav.w-100.d-flex.justify-content-end
+				.row.bg-black
+					.col-md-2
+						img(src="/images/supercheyenne.jpg", alt="super hero cheyenne").img-fluid
+						
+					.col-md-10
+						h1.text-white.jumbo-text SuperHero Manifesting
+						nav.navbar-nav.navbar-expand-md.text-center.w-100
+							.collapse.navbar-collapse#navbarSupportedContent
+							ul.navbar-nav.w-100.justify-content-center
 								li.nav-item
 									a.nav-link(href="/") Home
 										span.sr-only(current)
 								li.nav-item
+									i.fas.fa-circle
+								li.nav-item
 									a.nav-link(href="/blog") Blog
 								li.nav-item
+									i.fas.fa-circle
+								li.nav-item
 									a.nav-link(href="/coaching") Coaching
+
+
 
 
 		//- BODY

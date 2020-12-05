@@ -5,10 +5,11 @@ block content
     .row.text-center
       h1 Coaching with Cheyenne
     .row.text-center
-      .col
+      .col.d-flex.justify-content-between
         each package in locals.packages
           .postcard
             h3 #{package.title}
+            hr
             h5 #{package.tagline}
             p
               !=package.details

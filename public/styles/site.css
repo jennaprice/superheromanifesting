@@ -7024,7 +7024,7 @@ body {
   font-family: 'Arvo', Verdana, Helvetica, sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Permanent Marker', cursive; }
+  font-family: 'Permanent Marker', Verdana, cursive; }
 
 .bg-black {
   background-color: black; }
@@ -7035,7 +7035,12 @@ h1, h2, h3, h4, h5, h6 {
   height: 25vh; }
 
 #header a {
-  color: yellow; }
+  font-size: 45px;
+  color: white; }
+
+.jumbo-text {
+  font-size: 70px;
+  text-align: center; }
 
 .navbar-brand img {
   max-height: 200px;
@@ -7043,5 +7048,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .postcard {
   border: 1px solid gray;
+  border-radius: 3px;
   margin: 1rem auto;
-  padding: 2rem; }
+  padding: 2rem;
+  width: 30%; }
